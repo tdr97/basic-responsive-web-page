@@ -1,0 +1,418 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font_family: arial;
+   /* font_family: "arial" , sans-serif;
+       use the fonts in the "" if its available, otherwise use sans-serif */
+
+   font-size: 1.35rem ;
+   /* font-weight:  ;
+   font-style:  ;
+   font-display:  ;
+   text-align:  ;
+   text-transform: capitalize ;
+   text-decoration:   ;
+   /* overflow: auto; */ */
+}
+.note{
+  font-size: 0.6rem;
+  color: red;
+
+
+}
+
+header{
+   background-image: url('sea img.jpg');
+   height: 18em;
+
+   width: auto;
+   background-size: cover;
+   background-position: center;
+   list-style-type: lower-alpha;
+
+}
+ul{
+  /* display: flex;
+  list-style-type: none; */
+  margin-top: 20px;
+  float: left;
+  font-size: medium;
+  letter-spacing: 2px;
+
+}
+
+ul li{
+  display: inline;
+  font-size: rem;
+}
+ul li a{
+  margin: 22px 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 5px;
+  justify-content: space-between;
+  border: 2px solid tranparent;
+     /* size  style color OR opacity  */
+  transition: 0.4s ease-in-out;
+  font-size: 0.9rem;
+}
+ul li a:hover{
+  margin: auto;
+  background-color: white;
+  color: black;
+  border-radius: 20%;
+  background-size: cover;
+  padding: 10px 10px;
+  margin-left: 5px;
+  /* transform: rotate(45deg); */
+  transition: 0.6s ease-in-out;
+  font-weight: 400;
+
+}
+ul .active a{
+  background-color: white;
+  margin: auto;
+  color: #000;
+}
+ul .active a:hover{
+background-image: url(41-home-outline.gif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+font-size: 0.01px;
+/* padding: 15px 15px;
+margin: 10px 10px; */
+}
+
+.sign{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto ;
+  /* border: 2px solid yellow; */
+  word-wrap: normal;
+
+
+}
+.form{
+  background-image: url(https://www.hdwallpaper.nu/wp-content/uploads/2017/03/sign-12.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.gender  {
+width: 10%;
+
+
+}
+
+.about li{
+  background-color: black;
+}
+
+label{
+  font-size: 1rem;
+  font-weight: 400;
+  color: yellow;
+  display: block;
+  margin: 10 5;
+}
+
+input{
+  font-size: 0.8rem;
+  width: 30%;
+  height: auto;
+  color: black;
+  display: inline-block;
+}
+.logo5 img{
+  float: left;
+  width: 1rem;
+  height: auto;
+  display: flex;
+  flex: 0.7 2 150px;
+
+}
+.logo:hover{
+  transform: rotatex(360deg);
+  transition: 2.5s;
+}
+.title{
+  color: black;
+  h1{
+
+  }
+
+
+  /*************
+  CSS Points
+  *************/
+  /* background: radial-gradient(90deg(green 40%, blue 35%))
+      background: radial-gradient(circle(green 40%, blue 35%))
+      margin:spacing around element box.  padding:spacing inside element box
+      padding-inline: 1.5em ;
+      margin-inline: ;
+       em --> parent size  rem --> root or base size (default=16px).
+      *margin: auto; put the box at center
+      *ctrl+d   after click-hover a tag to choose all of that type
+
+      margin or padding: 20px 30px; --> frist:top and bottom. second:left and right
+      margin/padding: 20px 10px 20px 10px; --> top right bottom left
+      justify-content:  ; for flex (space-beetween)(center)
+      justify-content: ; for grid (space-evenly)(space-around)
+       justify content--> horizontal <- & ->
+          *after setting display to flex -->display: flex;
+          flex-direction: row or column;
+          flex-wrap: wrap; --> dosent decrease spacing between data and put the extra data in the next line
+      align-items: ; -->align items reletive to each other
+       align-items --> vertical --> top and  buttum
+      align-content: ; -->align space between lines when wrap
+      align-content: ;(space-beetween)(center)( space-evenly)(end)(start)
+      flex-basis: 100px; -->limit size changing
+      flex-grow: 1;  --> multipy growing rate when screen size changs(default=1)
+      flex-shrink: 1; --> multipy shrinking rate when screen size changs(default=1)
+      flex: 1 1 100px; --> grow shrink basis
+      align-self: flex-start or flex-end or center ; --> align a specefic item.
+          *after setting display to grid -->display: grid;
+          grid-template-columns: 10px 40px 15px; -->creats three columns with differ size.
+          grid-template-rows: 60px 90px; --> same explaination.
+          grid-template-columns: auto auto auto; --> split space evenly beetween three column
+          grid-column-gap: ;
+          grid-row-gap: ;
+          grid-gap: 40px 30px ; --> row column
+          grid-culomn: 1 / 4 ; start line/end line --> making space beetween items.
+          grid-row: 2/5;
+          grid-row: 1 / span 3; start in line three and go 3 more spaces
+          grid-area: ; row start / column start /row end /column end --> for make it faster
+          place-items:  ;
+          letter-spacing: ;
+        transition:
+        -webkit-transition: ;
+        -moz-transition: ;
+        -o-transition: ;
+        transform: scale(1.5) ;
+        transform: translate(20px 30px) ;
+        transform: rotate(40deg) ;
+         2D transform
+         transform: skewX(40deg) ;
+         transform: skewY(40deg) ;
+         transform: matrix();
+      .name , .name2{
+      work on tow classes at the same tim
+    }
+      creating Animations
+       @keyframes name {
+
+
+     }
+       using Animations
+
+       .class or #id {
+       animation-name:  ; for activate animation
+       animation-duration: ;
+       animation-timing-function: ;(ease, linear ...)
+       animation-delay: ;
+       animation-iteration-count: 2 or infinite ; (loop over animation)
+       animation_direction: ; (normal or reverse or alternate or alternate-reverse) alternate means 0 to 100 then 100 to 0
+        animation: name  duration  timingFunction  delay iteration-count direction ;(for shorten your code)
+
+     }
+
+      sudo selectors -->
+       */
+
+
+}
+.welcome h1{
+  display: flex;
+  flex: 0.8 1.5 100px;
+  text-decoration: none;
+  color:black;
+  position: absolute;
+  font-size: 110%;
+  font-display: auto;
+  top: 10%;
+  left: 55%;
+  text-shadow:10px;
+  width: auto;
+
+
+  border-radius: 40%;
+  border-bottom-width: medium;
+  background-position: center;
+  text-decoration-color: black;
+  transform: translate(-50%,-50%);
+  /* background: linear-gradient(to right, LightBlue, red, orange, green,blue);  */
+  opacity: 65%;
+  align-items: center;
+}
+.btn2{
+  /* float: right; */
+  /* position: inherit; */
+  transform: translate(50% 65%);
+  margin: 50px;
+  padding: 5px 5px;
+  color: black;
+  text-decoration: none;
+  size: 20px;
+  border: 3px solid white tranparent;
+  transition: 0.5s ease;
+  font-size: 0.8rem;
+}
+.btn2:hover{
+  background: LightBlue;
+  color: #rgba(200,60,70,0.7);
+}
+#imgg{
+    background-image: url('calm.jpg')no-repeat;
+    background-size: cover;
+}
+
+.btn{
+  display: block;
+  float: none;
+  align-self: center;
+  margin: inherit;
+  width: 30%;
+  /* border-radius: 50%; */
+  padding:0px 10px;
+  color: white;
+  /* size: 25px; */
+  font-size: 1rem;
+  text-decoration: none;
+  border-top: 2px solid rgba(0,0,0,0.7);
+
+
+
+}
+.btn:hover{
+  display: block;
+  /* transform: rotateY(3deg); */
+  transition: 2s ease-in-out;
+  /* background-color: LightBlue;
+  background-size: cover;
+  background-clip: border-box; */
+  border: 2px solid white tranparent;
+
+
+}
+  .btn:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: red;
+  transition: 400ms;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+.imgg{
+ margin: 20px 10px;
+ padding: 10px;
+
+
+ align-content: space-between;
+
+}
+.image{
+  /* display: flex;
+  flex-direction: row; */
+  /* overflow: auto; */
+  margin: 20px 10px;
+  left: 5px;
+  float: left;
+  text-align: center;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.9);
+}
+.galleryMenu ul{
+ text-overflow: clip;
+ background-color: black;
+ width: auto;
+}
+ img:hover{
+   transform: scale(1.2);
+   align-self: center;
+   border: 3px black tranparent;
+   margin: auto;
+   transition: 0.6s ease;
+ }
+
+.container{
+  background-image: url('sea3.png')
+  background-size:cover;
+  font-size: 1rem;
+
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 80vh;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ .container h1{
+   color: LightBlue;
+   margin-top: 20px;
+   letter-spacing: 2px;
+ }
+ .container p{
+   color: white;
+   margin-top: 40px;
+   font-size: large;
+  }
+.image{
+  margin: 20px 15px;
+}
+.img{
+  margin-top: 20%;
+  height: 1rem;
+  width: auto;
+  background: url("logo5.jpg")no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  border-radius: 60px;
+}
+.text{
+  color: white;
+  text-color: white;
+  margin-top: 90px;
+  float: center;
+  text-underline-position: below;
+}
+.tex{
+  margin-top: 40px;
+
+}
+@media (max-width: 700px )
+{
+  .note{
+    display: none;
+  .logo5{
+     float: left;#
+     border-radius: 50%;
+     width: 50%;
+      }
+    .logo{
+      float: left;#
+      border-radius: 50%;
+      width: 50%;
+    }
+
+  ul{
+    display: block;
+    flex-direction: column;
+
+    text-align: left;
+    margin: 15px 10px;
+    padding: 20px 10px;
+    justify-content: space-around;
+  }
+
+
+}

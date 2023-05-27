@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+
+  background-image: url('sea img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.counter{
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  border: 2px solid white;
+  transform: translate(50% , 50%);
+  margin: 20px 10px;
+  padding: 20px;
+}
+.btn{
+  margin-top: 10px;
+  width: 40%;
+  height: 40%;
+  font-size: 14px;
+  color: black;
+  background: white;
+  border: 0px;
+  border-radius: 30%;
+}
+.btn:hover{
+  background-color: red;
+  color:white;
+  transition: 1s ease;
+  cursor:  crosshair ;
+}

@@ -1,0 +1,99 @@
+body,*,*:before,*:after{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: "helvetica neue", helvetica,sans-serif;
+  font-size: 16px;
+  color: #474747;
+  h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 1em;
+  }
+}
+
+ a{
+   color: inherit;
+   font-weight: bold;
+   text-decoration: none;
+   float:left;
+   text-align: center;
+    padding: 10px 5px;
+    letter-spacing: 1px;
+    margin: 10px 5px;
+
+ }
+ h1{
+   float: left;
+ }
+  nav{
+    float: right;
+  }
+   li{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    word-spacing: 30px;
+    margin: 5 auto;
+    padding: inherit;
+    /* position: absolute; */
+    size: 0.8rem;
+    color: gray;
+
+
+  }
+  div{
+    float: right;
+    text-align: center;
+    position: absolute;
+  }
+  em{
+    display: block;
+    /* position: absolute;
+    size: 0.8rem;
+    color: gray; */
+    color: black;
+  }
+  a:hover, a:visited, a:active{
+    /* color: LightBlue; */
+    font-weight: 600;
+    size: 1.3rem;
+    transition: 0.5s;
+  }
+ .fixed-width{
+   width: 940px;
+   margin: 0 auto;
+ }
+
+ clearfix:before, clearfix:after{
+   content: "";
+   display: table;
+ }
+
+ clearfix:after{
+   clear: both;
+ }
+
+/*=====================
+   Header
+======================*/
+
+.page-header {
+ float: left;
+}
+.page-header nav li{
+  color: #bfbfbf;
+  float: left;
+  margin-right: 3rem;
+}
+
+.page-header > div{
+ border: 3px solid black;
+}
+
+.page-header nav{
+  float: right;
+  font-transform: uppercase;
+  border: 3px solid blue;
+}
